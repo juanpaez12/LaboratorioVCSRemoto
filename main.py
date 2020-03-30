@@ -1,7 +1,14 @@
-num1=int(input("Digite un numero: "))
-num2=int(input("Digite un numero: "))
+a = int(input ("Ingrese el valor de a: "))
+b = int(input ("Ingrese el valor de b: "))
+c = int(input ("Ingrese el valor de c: "))
 
-pro= num1*num2
-print("El producto es: ",pro,)
-doble= num1*2
-print("El doble de a es: ",doble,)
+d = (b*2)-(4*a*c)
+
+if d == 0 :
+    print("X1 y X2 equivalen a "+ str(-b/(2*a)))
+elif d>0 :
+    print("X1 es igual a: " + str(((-b+(d**(1/2)))/(2*a))))
+    print("X2 es igual a: " + str(((-b-(d**(1/2)))/(2*a))))
+
+else: 
+    print("No tiene raices dentro del dominio de los reales")
